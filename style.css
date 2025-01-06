@@ -81,18 +81,24 @@
     height: 100vh;
     padding: 0 4%;
     display: flex;
-}
-
-.container-card{
-    width: 50%;
-    display: flex;
-    margin-top: 22%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .card{
+    border: solid;
+    border-color:#EBDFCC;
+    border-width: 5px;
+    height: 80%;
+    width: 27%;
+}
+
+.container-q{
     background-color: #C9C8BC;
-    color: #02031A;
-    border-radius: 10px;
-    width: 85%;
-    height: 60%;
+    height: 60vh;
+}
+
+footer{
+    background-color: #02031A;
+    height: 40vh;
 }

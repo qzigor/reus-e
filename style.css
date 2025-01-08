@@ -12,15 +12,22 @@
     font-size: 1.25rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .list{
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
+    font-size: 1.5rem;
 }
 
-.list li:hover{
+.list a{
+    text-decoration: none;
+    color: #C9C8BC;
+}
+
+.list a:hover{
     color: #FF0841;
     cursor: pointer;
 }
@@ -52,6 +59,17 @@
 
 .container-image{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-login{
+    height: 80%;
+}
+
+.imagem-vendedor{
+    height: 50%;
 }
 
 .container-secundary{

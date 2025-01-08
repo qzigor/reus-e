@@ -4,6 +4,10 @@
     font-family: "Nunito", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .nav-bar{
     background-color: #02031A;
     color: #EBDFCC;
@@ -32,7 +36,7 @@
     cursor: pointer;
 }
 
-.container-primary{
+.container-first{
     background-color: #02031A;
     color: #EBDFCC;
     height: 90vh;
@@ -72,7 +76,7 @@
     height: 50%;
 }
 
-.container-secundary{
+.container-second{
     background-color: #C9C8BC;
     height: 100vh;
     color: #02031A;
@@ -93,7 +97,7 @@
     font-weight: 600;
 }
 
-.container-tertiary{
+.container-third{
     background-color: #02031A;
     color: #EBDFCC;
     height: 100vh;
@@ -107,16 +111,102 @@
     border: solid;
     border-color:#EBDFCC;
     border-width: 5px;
-    height: 80%;
+    border-radius: 10px;
+    height: 50%;
     width: 27%;
+    text-align: center;
+    padding: 1%;
 }
 
-.container-q{
+.card h2{
+    margin: 5% 0;
+}
+
+.card:hover{
+    border-color: #FF0841;
+    width: 33%;
+    transition: 0.5s;
+    font-weight: 900;
+}
+
+.card:hover h2{
+    color: #FF0841;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+.container-fourth{
     background-color: #C9C8BC;
     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
     background-color: #02031A;
     height: 40vh;
 }
+
+.carousel {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    background:#02031A;
+    border-color:#FF0841;
+    border-style: solid;
+    color: #EBDFCC;
+  }
+  
+  .carousel-track-container {
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .carousel-slide p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-slide span {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    color: #333;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }

@@ -19,6 +19,10 @@ html{
     justify-content: space-between;
 }
 
+.nav-bar img{
+    cursor: pointer;
+}
+
 .list{
     list-style-type: none;
     display: flex;
@@ -137,18 +141,13 @@ html{
 
 .container-fourth{
     background-color: #C9C8BC;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer{
-    background-color: #02031A;
-    height: 40vh;
-}
-
-.carousel {
+.carousel{
     position: relative;
     width: 60%;
     height: 60%;
@@ -159,54 +158,71 @@ footer{
     border-color:#FF0841;
     border-style: solid;
     color: #EBDFCC;
-  }
-  
-  .carousel-track-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track-container{
     overflow: hidden;
-  }
-  
-  .carousel-track {
+}
+
+.carousel-track{
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide {
+}
+
+.carousel-slide{
     min-width: 100%;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-  }
-  
-  .carousel-slide p {
+}
+
+.carousel-slide p{
     font-size: 1.2rem;
     margin-bottom: 10px;
-  }
-  
-  .carousel-slide span {
+}
+
+.carousel-slide span{
     font-weight: bold;
     color: #555;
-  }
-  
-  button {
+}
+
+button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     z-index: 1;
     color: #333;
-  }
-  
-  button:focus {
+}
+
+button:hover{
+    color: #FF0841;
+    transition: 0.5s;
+}
+
+button:focus{
     outline: none;
-  }
-  
-  .prev {
+}
+
+.prev{
     left: 10px;
-  }
-  
-  .next {
+}
+
+.next{
     right: 10px;
-  }
+}
+
+footer{
+    background-color: #02031A;
+    height: 20vh;
+    color:#EBDFCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

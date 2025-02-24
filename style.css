@@ -219,10 +219,34 @@ button:focus{
 }
 
 footer{
+    padding: 0 4%;
     background-color: #02031A;
-    height: 20vh;
+    height: 30vh;
     color:#EBDFCC;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.colum{
+    box-sizing: border-box;
+    padding-top: 3%;
+    height: 100%;
+}
+
+.footer-titles{
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.colum .text{
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.colum .text:hover{
+    color: #FF0841;
+    cursor: pointer;
 }

@@ -232,12 +232,13 @@ footer{
     box-sizing: border-box;
     padding-top: 3%;
     height: 100%;
+    width: 30%;
 }
 
 .footer-titles{
     font-size: 1.75rem;
     font-weight: bold;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .colum .text{
@@ -249,4 +250,10 @@ footer{
 .colum .text:hover{
     color: #FF0841;
     cursor: pointer;
+}
+
+.footer-img{
+    cursor: pointer;
+    width: 125px;
+    height: auto;
 }

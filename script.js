@@ -1,4 +1,3 @@
-// script.js
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.next');
@@ -6,7 +5,6 @@ const prevButton = document.querySelector('.prev');
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-// Organize os slides lado a lado
 slides.forEach((slide, index) => {
   slide.style.left = slideWidth * index + 'px';
 });
@@ -17,7 +15,6 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   targetSlide.classList.add('current-slide');
 };
 
-// Clique no botão "próximo"
 nextButton.addEventListener('click', () => {
   const currentSlide = track.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
@@ -27,7 +24,6 @@ nextButton.addEventListener('click', () => {
   }
 });
 
-// Clique no botão "anterior"
 prevButton.addEventListener('click', () => {
   const currentSlide = track.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
